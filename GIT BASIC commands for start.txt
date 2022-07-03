@@ -47,7 +47,8 @@ git branch -M main     ----- прыгнули с master на main
 Clonning Project:
 
  git clone https://github.com/CGobal/Git-Learning.git
-
+In Mac : Terminal 
+cd ~    --- >The ~ means the home directory, so this command will always change back to your home directory (the default directory in which the Terminal opens). 
 
 
 
