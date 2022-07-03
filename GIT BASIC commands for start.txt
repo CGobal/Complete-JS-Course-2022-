@@ -1,0 +1,65 @@
+cd . .          -----  This allows you to move up a level.
+git --version    --- to check if you have git installed
+
+dir 
+
+cd Desctop  ---- changes the current folder.
+cd ..  --- cd .. (goes one directory up)
+cd Git-Folder
+
+
+1. git init  --- Insite this folder Git Version Control will start working
+2. git status  --- shows untracked files
+3. git add [+TAB] (or we type file name here). --- NOW GIT starts to follow this file
+4. git status ---- shows the file name in green colour.
+5. work on HTML , change somth. in code
+6. git status ---- NOW it shoes that that particular file has been changed(it's in RED colour)
+7. git add file.name
+7. git add .       ---- берет все файлы
+8. git commit -m "Added code into index.html" (every time after git add)
+9. git push   --- sending to server
+10. git branch   --- показывает на какой ветке ты находишься
+11. git checkout -b Readme  ---Created and Switched to a new branch 'Readme'
+12. git add . && git commit -m "Changed Something
+13. git checkout main  --- Switched to branch 'main' (теперь находясь в этой папке можно сделать слияние) 
+14. git merge Readme  --- сливает Readme в наш Main   
+15. git branch -D Readme  --- удаляем бренч Readme
+
+16. git pull   --  закинуть изменения из майн 
+
+
+
+
+
+
+
+
+
+First time configuration used:
+git config --global user.email "ch.gobal@gmail.com"
+git config --global user.name "Chris Gobal"
+
+We create a repository on GitHub WebSite :
+Following instructions on website:
+git branch -M main     ----- прыгнули с master на main
+
+
+Clonning Project:
+
+ git clone https://github.com/CGobal/Git-Learning.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
