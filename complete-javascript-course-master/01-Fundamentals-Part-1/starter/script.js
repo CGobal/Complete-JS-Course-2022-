@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
@@ -15,7 +16,7 @@ let $function = 27;
 
 let person = "jonas";
 let PI = 3.1415;
-let Person = "jonas"; // Recommended By convention - Do not start variable name with upper case letter — but it is still legal (we can do it this way)
+let Person = "jonas"; // Recommended By convention - Do Not start variable name with upper case letter — but it is still legal (we can do it this way)
 
 let myFirstJob = "Coder";
 let myCurrentJob = "Teacher";
@@ -25,6 +26,16 @@ let job2 = "teacher";
 
 console.log(myFirstJob);
 
+*/
 
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
 
+// console.log(typeof true);
+console.log(typeof javascriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof "Jonas");
+
+javascriptIsFun = "YES!";
+console.log(typeof javascriptIsFun);
 
