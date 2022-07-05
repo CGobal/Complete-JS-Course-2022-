@@ -1,5 +1,5 @@
 
-/*
+
 //LECTURE: Values and Variables
 const myCountry = "Armenia";
 let population = 2974282;
@@ -13,11 +13,11 @@ const continent = "Europe";
 
 const isIsland = false;
 let language;
-console.log("**********************");
-console.log(typeof myCountry);
-console.log(typeof population);
-console.log(typeof isIsland);
-console.log(typeof language);
+// console.log("**********************");
+// console.log(typeof myCountry);
+// console.log(typeof population);
+// console.log(typeof isIsland);
+// console.log(typeof language);
 
 // LECTURE: let, const and var
 
@@ -37,8 +37,21 @@ console.log(population > populationFinland);
 let populationAverage = 33000000;
 console.log(population < populationAverage);
 let populationInMillion = population / 1000000;
-const description = myCountry + " is in " + continent + ", and its " + populationInMillion.toFixed(2) + " million people speak " + language;
-console.log(description);
+let description = myCountry + " is in " + continent + ", and its " + populationInMillion.toFixed(2) + " million people speak " + language;
+// console.log(description);
 
-*/
 
+
+// LECTURE: Strings and Template Literals
+
+description = ` ${myCountry} is in ${continent}, and its ${populationInMillion.toFixed(2)} million people speak ${language}`;
+//console.log(description);
+
+// LECTURE: Taking Decisions: if / else Statements
+
+population = 3;
+if(population  > 33) {
+        console.log(`${myCountry}'s population is above average`) 
+} else {
+    console.log(`${myCountry}'s population is ${33 - population} million below average`)     
+}
