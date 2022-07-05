@@ -39,12 +39,12 @@ console.log(typeof javascriptIsFun);
 javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
 
-let year;
+let year; // declare a variable
 
 console.log(year);
 console.log(typeof year);
 
-year = 1991;
+year = 1991; // assigning a value to variable
 
 console.log(year);
 console.log(typeof year);
@@ -53,4 +53,19 @@ console.log(typeof year);
 console.log(typeof null);  // object
 
 */
+
+let age = 30;
+age = 31; // So, it was 30 and now it's 31,
+//In technical terms, we call this reassigning a value to a variable, or also we say that we mutate the age variable in this case.
+
+const birthYear = 1991; // keyword "const" creates a variable that we cannot reassign or in technical terms, an immutable variable. So, a variable that cannot be mutated,
+
+//birthYear = 1990; // => Uncaught TypeError: Assignment to constant variable.
+//const job;  // we CAN NOT declare empty const variables. For example, this is not legal. => Uncaught SyntaxError: Missing initializer in const declaration 
+
+var job = "programmer";
+job = "teacher";
+
+lastName = "Schmedtmann";
+console.log(lastName);
 
