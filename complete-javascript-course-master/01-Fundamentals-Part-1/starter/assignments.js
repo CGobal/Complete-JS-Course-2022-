@@ -1,4 +1,5 @@
 
+/*
 //LECTURE: Values and Variables
 const myCountry = "Armenia";
 let population = 2974282;
@@ -38,4 +39,6 @@ console.log(population < populationAverage);
 let populationInMillion = population / 1000000;
 const description = myCountry + " is in " + continent + ", and its " + populationInMillion.toFixed(2) + " million people speak " + language;
 console.log(description);
+
+*/
 
