@@ -355,7 +355,6 @@ if(23 > 10) {
 const me = 'Jonas';
 console.log(`i'm ${2037 - 1991} years old ${me}`) // you CAN NOT Insert if-else statement in template literal(it only accepts expression, NOT - statements)
 
-*/
 
 // The Conditional (Ternary) Operator
 
@@ -379,4 +378,7 @@ console.log(drink2)
 
 // template literal Does accept Ternanry Operator, because it is an Expression
 
-console.log(`I like to drink ${age >= 18 ? 'wine🍷' : "water 💧"}`)
+console.log(`I like to drink ${age >= 18 ? 'wine🍷' : "water 💧"}`);
+
+*/
+
