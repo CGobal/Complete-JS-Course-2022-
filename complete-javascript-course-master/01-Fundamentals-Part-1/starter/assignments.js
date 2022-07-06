@@ -12,7 +12,7 @@ const continent = "Europe";
 //LECTURE: Data Types
 
 const isIsland = false;
-let language;
+//let language;
 // console.log("**********************");
 // console.log(typeof myCountry);
 // console.log(typeof population);
@@ -21,7 +21,7 @@ let language;
 
 // LECTURE: let, const and var
 
-language = "Armenian";
+//language = "Armenian";
 // isIsland = true; // => Uncaught TypeError: Assignment to constant variable.
 
 /*
@@ -93,4 +93,33 @@ if((language === "English") && (population < 50000000) && !isIsland) {
 }
 
 */
+
+// LECTURE: The switch Statement
+
+const language = 'arabic';
+
+switch(language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log("MOST number of native speakers!"); 
+        break;   
+    case 'spanish':
+        console.log("2nd place in number of native speakers"); 
+        break;   
+    case 'english':
+        console.log("3rd place"); 
+        break;   
+    case 'english':
+        console.log("3rd place"); 
+        break;   
+    case 'hindi':
+        console.log("Number 4"); 
+        break;   
+    case 'arabic':
+        console.log("5th most spoken language");  
+        break;
+    default:
+        console.log('Great language too :D')             
+}
+
 
