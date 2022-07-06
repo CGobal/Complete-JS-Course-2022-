@@ -147,4 +147,3 @@ if(averageDolphins === averageKoalas && averageDolphins >= 100 && averageKoalas 
 
 */
 
-// The switch 
