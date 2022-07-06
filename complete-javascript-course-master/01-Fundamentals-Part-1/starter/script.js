@@ -146,7 +146,7 @@ console.log(`String with
 multiple 
 lines`);
 
-*/
+
 
 // Taking Decisions: if / else Statements
 
@@ -163,7 +163,7 @@ if(age >= 18) {
 if() {     // This is called - "If-else Controle structure"
 } else {
 }
-*/
+
 
 const birthYear = 2012;
 let century;
@@ -174,3 +174,62 @@ if(birthYear <= 2000) {
 }
 
 console.log(century);
+
+
+
+//Type Conversion and Coercion
+
+const inputYear = '1991';
+console.log(Number(inputYear) , inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')) // NaN ---> invalid number 
+console.log(typeof NaN); // => number (it is not --> "not a number", because actially it is a number)
+
+console.log(String(23), 23)
+
+//Type Coercion
+
+//Type coercion happens whenever an operator is dealing with two values that have different types. JavaScript will then, behind the scenes,convert one of the values to match the other value. So in that case, so that in the end, the operation can be executed.
+
+console.log("I am " + 23 + " years old"); // "+" operator converts number to string
+console.log('23' + '10' + 3)  // 23103 --> "string"
+console.log('23' - '10' - 3) // 10 -->  minus operator actually triggers the opposite conversion (strings to numbers)
+console.log('23' * '10') // 230
+console.log('23' / '2') // 11.5
+console.log("*****");
+console.log('123' < 57); // false
+console.log('123' > 57); // true
+console.log("*****");
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n) // 10
+
+*/
+
+// Truthy and Falsy Values
+
+// 5 Falsy Values:  0, "", undefined, null, NAN ----> all of them will became false, when converted to Boolean
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if(money) {
+    console.log("Don't spend it all :)");
+} else {
+    console.log("You should get a job!");
+}
+
+let height;
+
+if(height) {
+    console.log('YaY! Height is defined!');
+} else {
+   console.log('Height is UNDEFINED'); 
+}
+
