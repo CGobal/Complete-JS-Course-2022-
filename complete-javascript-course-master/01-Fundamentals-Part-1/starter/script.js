@@ -206,7 +206,7 @@ let n = '1' + 1;
 n = n - 1;
 console.log(n) // 10
 
-*/
+
 
 // Truthy and Falsy Values
 
@@ -233,3 +233,36 @@ if(height) {
    console.log('Height is UNDEFINED'); 
 }
 
+*/
+
+// Equality Operators: == vs. ===
+
+// "=="   --> The loose equality operator
+// "==="  --> The strict equality operator 
+// "!=="  --> The different operator
+
+const age = "18";
+
+if(age === 18) console.log("You just became an adult :D (strict)");
+
+if(age == 18) console.log("You just became an adult :D (lose)");
+
+// So as a general rule for clean code,avoid the loose equality operator as much as you can. So when comparing values, always use strict equality with the three equal signs.
+
+const favourite = Number(prompt("What's your favourite number?"));
+
+console.log(favourite);
+console.log(typeof favourite);
+
+if(favourite === 23) { 
+    console.log("Cool! 23 is an amazing number!");
+} else if(favourite === 7) {
+    console.log("7 is also a cool number");
+} else if(favourite === 9) {
+    console.log("9 is also a cool number");
+} else {
+    console.log("Number is not 23 or 7");
+}
+
+
+if(favourite !== 23) console.log("Why not 23?");
