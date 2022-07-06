@@ -122,7 +122,7 @@ switch(language) {
         console.log('Great language too :D')             
 }
 
-*/
+
 
 // LECTURE: The Conditional (Ternary) Operator
 
@@ -133,3 +133,4 @@ population > 33000000 ? console.log("Armenia's population is above average.") : 
 
 console.log(`${myCountry}'s population is ${population > 33000000 ? "above" : "below"} average.`);
 
+*/
