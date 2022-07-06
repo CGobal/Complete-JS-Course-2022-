@@ -295,7 +295,6 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
 }
 
 
-
 // The switch 
 
 const day = 'wednesday';
@@ -339,4 +338,45 @@ if(day === "monday") {
     console.log("Not a valid day!");
 }
 
+
+
+// Statements and Expressions
+
+3 + 4     // This is an expression, because it does produce a value.
+1971      // an expression,
+true && false && !false // This is an expression, because it will produce a boolean value.
+
+// if() {} , switch() // these are statements, and statements are like full sentences that translate our actions. So the actions that we want the program to perform
+
+if(23 > 10) {
+    const str = '23 is bigger';
+}
+
+const me = 'Jonas';
+console.log(`i'm ${2037 - 1991} years old ${me}`) // you CAN NOT Insert if-else statement in template literal(it only accepts expression, NOT - statements)
+
 */
+
+// The Conditional (Ternary) Operator
+
+const age = 23;
+
+// age >= 18 ? console.log('I like to drink wine🍷') : console.log('I like to drink water 💧');
+
+// Ternary OperatorAnd  - remember that an operator always produces a value. So in other words, Ternary Operator is an expression, we can then assign that value to a variable.
+
+const drink = age >= 18 ? 'wine🍷' : "water 💧"; // all in ONE line of code
+console.log(drink);
+
+
+let drink2;  // We need to define a "drink2" variable outside of the if and the else blogs, because any variable that we define inside of a block, is not available outside.👇👇👇
+if(age >= 18) {
+    drink2 = 'wine🍷';
+} else {
+    drink2 = "water 💧";
+}
+console.log(drink2)
+
+// template literal Does accept Ternanry Operator, because it is an Expression
+
+console.log(`I like to drink ${age >= 18 ? 'wine🍷' : "water 💧"}`)
