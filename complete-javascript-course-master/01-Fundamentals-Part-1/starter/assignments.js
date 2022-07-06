@@ -81,7 +81,7 @@ if(numNeighbours === 1) {
     console.log("No borders");
 }
 
-*/
+
 
 // LECTURE: Logical Operators
 
@@ -92,3 +92,4 @@ if((language === "English") && (population < 50000000) && !isIsland) {
     console.log('Armenia does not meet your criteria :(')
 }
 
+*/
