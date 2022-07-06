@@ -1,4 +1,4 @@
-/*
+
 
 //LECTURE: Values and Variables
 const myCountry = "Armenia";
@@ -22,8 +22,9 @@ let language;
 // LECTURE: let, const and var
 
 language = "Armenian";
-//isIsland = true; // => Uncaught TypeError: Assignment to constant variable.
+// isIsland = true; // => Uncaught TypeError: Assignment to constant variable.
 
+/*
 // LECTURE: Basic Operators
 
 console.log("**********************");
@@ -81,3 +82,13 @@ if(numNeighbours === 1) {
 }
 
 */
+
+// LECTURE: Logical Operators
+
+
+if((language === "English") && (population < 50000000) && !isIsland) {
+    console.log('You should live in Armenia:)')
+} else {
+    console.log('Armenia does not meet your criteria :(')
+}
+
