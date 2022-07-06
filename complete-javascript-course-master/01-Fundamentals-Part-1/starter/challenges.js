@@ -97,7 +97,7 @@ Test data:
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK 😀
- */
+ 
 
 // § Data 1:
 // const score1Dolphins = 96;
@@ -144,3 +144,7 @@ if(averageDolphins === averageKoalas && averageDolphins >= 100 && averageKoalas 
 } else {
     console.log("No one wins the trophy😪")
 }
+
+*/
+
+// The switch 
