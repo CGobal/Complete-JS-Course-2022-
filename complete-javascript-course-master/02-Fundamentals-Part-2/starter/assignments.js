@@ -34,10 +34,27 @@ const percentageOfWorld2 = function(population) {
 
 console.log(percentageOfWorld2(3),percentageOfWorld2(11), percentageOfWorld2(140));
 
-*/
+
 
 // LECTURE: Arrow Functions
 
 const percentageOfWorld3 =  population => `${((population / 7900) * 100).toFixed(2)}%`;
 
 console.log(percentageOfWorld3(3),percentageOfWorld3(11), percentageOfWorld3(140));
+
+
+// LECTURE: Functions Calling Other Functions
+
+function percentageOfWorld1(population) {
+    return `${((population / 7900) * 100).toFixed(2)}%`
+}
+
+function describePopulation(country, population) {
+    return `${country} has ${population} million people, which is about ${percentageOfWorld1(population)} of the world.`
+}
+
+console.log(describePopulation("Armenia", 3));
+console.log(describePopulation("Georgia", 10.5));
+console.log(describePopulation("Russia", 140));
+
+*/
