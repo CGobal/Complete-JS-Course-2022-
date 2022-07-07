@@ -28,7 +28,27 @@ Apply this to the team's average scores 😉
 GOOD LUCK 😀
 */
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 +score3) / 3;
+const calcAverage = (a, b, c) => (a + b +c) / 3; // It's a standalone function that we can then use for our own purposes.  Tt is kind of isolated from the rest of the code here.
 
+// § Data 1:
+// const averageDolphins = calcAverage(44, 23, 71);
+// const averageKoalas = calcAverage(65, 54, 49);
 
-console.log(calcAverage(44, 23, 71));
+// § Data 2:
+const averageDolphins = calcAverage(85, 54, 41);
+const averageKoalas = calcAverage(23, 34, 27);
+console.log(averageDolphins, averageKoalas);
+
+const checkWinner = function(avgDolhins, avgKoalas) {
+
+    if((avgDolhins / avgKoalas >= 2)) {
+        console.log(`Dolhins win (${avgDolhins} vs. ${avgKoalas})`)
+    } else if(avgKoalas / avgDolhins >= 2) {
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`)
+    } else {
+        console.log(`No one wins this Game :(`);
+    }
+}
+
+checkWinner(averageDolphins, averageKoalas);
+
