@@ -58,3 +58,16 @@ console.log(describePopulation("Georgia", 10.5));
 console.log(describePopulation("Russia", 140));
 
 */
+
+// LECTURE: Introduction to Arrays
+
+const percentageOfWorld =  population => ((population / 7900) * 100).toFixed(2);
+const populations = [3, 11.5, 140, 240];
+
+console.log(populations.length === 4);
+
+const percentages = [percentageOfWorld(populations[0]), percentageOfWorld(populations[1]), percentageOfWorld(populations[2]), percentageOfWorld(populations[3])];
+
+console.log(percentages);
+
+
