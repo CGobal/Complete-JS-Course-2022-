@@ -52,3 +52,23 @@ console.log(appleOrangeJuice);
 const num = Number('23');
 
 */
+
+// Function Declarations vs. Expressions
+
+// Function Declarations
+const age1 = calcAge1(1991); // Hoisting
+
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}    
+
+// Function Expressions
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}                               // function in JS are just values
+const age2 = calcAge2(1991);
+
+console.log(age1, age2);
+
+// So what's the big difference between function declarations and function expressions?   Well, the main practical difference is that we can actually call function declarations before they are defined in the code.
+
