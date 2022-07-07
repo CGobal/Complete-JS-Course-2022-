@@ -28,6 +28,7 @@ Apply this to the team's average scores 😉
 GOOD LUCK 😀
 */
 
-const calcAverage = function(score1, score2, score3) {
-    return (score1 + score2 +score3) / 3;
-}
+const calcAverage = (score1, score2, score3) => (score1 + score2 +score3) / 3;
+
+
+console.log(calcAverage(44, 23, 71));
