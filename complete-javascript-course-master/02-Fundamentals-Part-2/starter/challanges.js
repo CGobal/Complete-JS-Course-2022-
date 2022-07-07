@@ -1,3 +1,4 @@
+'use strict'
 /*
 JavaScript Fundamentals – Part 2
 
@@ -31,13 +32,13 @@ GOOD LUCK 😀
 const calcAverage = (a, b, c) => (a + b +c) / 3; // It's a standalone function that we can then use for our own purposes.  Tt is kind of isolated from the rest of the code here.
 
 // § Data 1:
-// const averageDolphins = calcAverage(44, 23, 71);
-// const averageKoalas = calcAverage(65, 54, 49);
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
 
 // § Data 2:
-const averageDolphins = calcAverage(85, 54, 41);
-const averageKoalas = calcAverage(23, 34, 27);
-console.log(averageDolphins, averageKoalas);
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
 
 const checkWinner = function(avgDolhins, avgKoalas) {
 
@@ -46,9 +47,10 @@ const checkWinner = function(avgDolhins, avgKoalas) {
     } else if(avgKoalas / avgDolhins >= 2) {
         console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`)
     } else {
-        console.log(`No one wins this Game :(`);
+        console.log(`Noteam wins this Game :(`);
     }
 }
 
-checkWinner(averageDolphins, averageKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
+
 
