@@ -68,7 +68,26 @@ const calcAge2 = function (birthYear) {
 }                               // function in JS are just values
 const age2 = calcAge2(1991);
 
-console.log(age1, age2);
+//console.log(age1, age2);
 
 // So what's the big difference between function declarations and function expressions?   Well, the main practical difference is that we can actually call function declarations before they are defined in the code.
 
+//*******************************************************************************
+
+// Arrow Functions
+
+// And an arrow function is simply a special form of function expression that is shorter and therefore faster to write. plicated.BUT there is another fundamental difference - arrow function do not get a so-called this keyword.
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`
+}
+
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1980, "Bob"));
