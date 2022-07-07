@@ -121,8 +121,22 @@ const calcAge = function(birthYear) {
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
     const retirement = 65 - age;
-    return retirement;
-    //return `${firstName} retires in ${retirement} years`
+
+    if(retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`); // If you put this line of code below return statement, it will be ignored, because , the return statement immediately exits or immediately returns the function.
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+
+// Using Ternary operator for the same purpose
+ //   return retirement > 0 ? retirement
+ //           : retirement === 0 ? `You made it ${firstName}! Time to retire!`
+ //          : `${firstName} is already retired`;
+
 }
 
-console.log(yearsUntilRetirement(1991, "Jonas"))
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1950, "Mike"));
+console.log(yearsUntilRetirement(1972, "Bob"));
