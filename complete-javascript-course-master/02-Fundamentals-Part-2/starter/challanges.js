@@ -27,7 +27,7 @@ Hints:
 § To check if number A is at least double number B, check for A >= 2 * B.
 Apply this to the team's average scores 😉
 GOOD LUCK 😀
-*/
+
 
 const calcAverage = (a, b, c) => (a + b +c) / 3; // It's a standalone function that we can then use for our own purposes.  Tt is kind of isolated from the rest of the code here.
 
@@ -50,7 +50,6 @@ const checkWinner = function(avgDolhins, avgKoalas) {
         console.log(`Noteam wins this Game :(`);
     }
 }
-
 checkWinner(scoreDolphins, scoreKoalas);
 
-
+*/

@@ -141,4 +141,52 @@ console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1950, "Mike"));
 console.log(yearsUntilRetirement(1972, "Bob"));
 
+
+
+
+// Introduction to Arrays
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2020, 2008);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay"; // Only primitive values, are immutable. As Array is not a primitive value, so we can actually always change it so we can mutate it. EVEN if we declare the friends variable with "const".
+console.log(friends); // ['Michael', 'Steven', 'Jay']
+
+
+// friends = ["Bob", "Alice"];  // Now what we can NOT do is to actually replace the entire Array. //Uncaught TypeError: Assignment to constant variable.
+
+
+const jonas = ['Jonas', "Shmedtmann", 2037 - 1991, "teacher", friends, [10, 20, 30]];
+
+console.log(jonas);
 */
+
+// Exercise
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+}
+const years = [1991, 1985, 1957, 1967, 1987];
+
+console.log(calcAge(years)) // NaN
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]; // So basically we can place function calls into an Array just fine, because they will produce a value.
+console.log(ages);
+
+// my example
+const addTwo = (num1, num2) => num1 + num2;
+const sums = [addTwo(10, 30), addTwo(20, 8), addTwo(98, 80), addTwo(30, 43)];
+// So basically we can place function calls into an Array just fine, because they will produce a value.
+console.log(sums); // [40, 28, 178, 73]
+
