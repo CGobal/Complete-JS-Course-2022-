@@ -69,4 +69,25 @@ const percentages = [percentageOfWorld(populations[0]), percentageOfWorld(popula
 
 console.log(percentages);
 
+
+
+// LECTURE: Basic Array Operations (Methods)
+
+const neighbours = ["Georgia", "Turkey", "Iran"];
+console.log(neighbours);
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop("Utopia");
+console.log(neighbours);
+
+if(!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country :D");
+}
+
+
+neighbours[neighbours.indexOf("Turkey")] = "Shat Vat Country";
+console.log(neighbours);
+
 */

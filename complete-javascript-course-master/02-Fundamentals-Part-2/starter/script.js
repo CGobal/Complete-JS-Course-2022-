@@ -229,3 +229,31 @@ if (friends.includes("Steven")) {
 
 */
 
+
+// Introduction to Objects
+
+// arrays are a data structure, which can be used to basically store multiple related values in the same variable.
+
+const jonasArray = [ 
+    "Jonas",
+    "Schmedtmann", 
+    2037 - 1991,
+    "teacher",
+    ["michael", "Peter", "Steven"]
+];
+
+// So in objects, we actually define key value pairs. And so then we can give each of these values here, a name.
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann", 
+    age: 2037 - 1991, //  we can put any expression here. So this will be calculated,and then will be assigned to age.
+    job: "teacher",
+    friends: ["michael", "Peter", "Steven"]
+}
+
+// so this object, which is called Jonas has five properties. So property first name with the value of Jonas, property last name with the value of Schmedtmann....
+
+// We should use arrays for more order data,  and objects for more unstructured data. And data that we actually want to name, and then retrieve from the object, based on that name.
+
+
