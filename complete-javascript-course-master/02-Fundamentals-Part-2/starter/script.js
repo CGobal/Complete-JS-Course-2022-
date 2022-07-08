@@ -501,4 +501,5 @@ while (dice !== 6) {
 
 //So whenever you do need a loop without a counter, you can reach for the while loop.    So basically that happens whenever you do not know beforehand how many iterations the loop will have.
 
+console.log(13)
 
