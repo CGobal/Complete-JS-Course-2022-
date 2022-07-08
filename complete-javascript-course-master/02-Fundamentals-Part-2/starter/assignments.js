@@ -57,7 +57,7 @@ console.log(describePopulation("Armenia", 3));
 console.log(describePopulation("Georgia", 10.5));
 console.log(describePopulation("Russia", 140));
 
-*/
+
 // LECTURE: Introduction to Arrays
 
 const percentageOfWorld =  population => ((population / 7900) * 100).toFixed(2);
@@ -70,7 +70,7 @@ const percentages = [percentageOfWorld(populations[0]), percentageOfWorld(popula
 console.log(percentages);
 
 
-/*
+
 // LECTURE: Basic Array Operations (Methods)
 
 const neighbours = ["Georgia", "Turkey", "Iran"];
@@ -174,3 +174,15 @@ for(let i = 0; i < populations.length; i++) {
 console.log(percentages2);
 
 */
+
+// LECTURE: Looping Backwards and Loops in Loops
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+'Russia']];
+
+for(let i = 0; i < listOfNeighbours.length; i++) {
+
+    for(let j = 0; j < listOfNeighbours[i].length; j++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+    }
+}

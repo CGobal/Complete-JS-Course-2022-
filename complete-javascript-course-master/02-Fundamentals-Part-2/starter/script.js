@@ -430,6 +430,47 @@ for(let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
 
+
+//  Looping Backwards and Loops in Loops
+
+const jonas = [ 
+    "Jonas",
+    "Schmedtmann", 
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"],
+    true
+];
+
+// my versions
+
+// console.log("*********************************");
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//     if(typeof jonas[i] === "object") {
+//         for(let j = 0; j < jonas[i].length; j++) {
+//             console.log(jonas[i][j]);
+//         }
+//     } else {
+//         console.log(jonas[i]);
+//     }
+// }
+
+
+// lecture notes
+
+// 0,1, ....,4
+// 4,3,.....,0
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+for(let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {         // inner Loop
+        console.log(`Exercise: ${exercise} Lifting weights repetition ${rep} 🎖`)
+    }
+}
+
 */
-
-
