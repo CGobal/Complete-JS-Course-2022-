@@ -143,7 +143,6 @@ const myCountry2 = {
 };
 
 
-
 myCountry2.describe();
 myCountry2.checkIsland();
 console.log(myCountry2.isIsland);
