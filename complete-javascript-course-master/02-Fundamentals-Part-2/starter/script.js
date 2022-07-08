@@ -227,7 +227,6 @@ if (friends.includes("Steven")) {
     console.log("You have a friend called Steven");
 }
 
-*/
 
 
 // Introduction to Objects
@@ -256,4 +255,48 @@ const jonas = {
 
 // We should use arrays for more order data,  and objects for more unstructured data. And data that we actually want to name, and then retrieve from the object, based on that name.
 
+
+*/
+
+//  Dot vs. Bracket Notation
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann", 
+    age: 2037 - 1991, //  we can put any expression here. So this will be calculated,and then will be assigned to age.
+    job: "teacher",
+    friends: ["Michael", "Peter", "Steven"]
+}
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]); // in the square brackets, we could put any expression here
+// So when we need to first compute the property name, like we did here with the first and last name, then of course we have to use the bracket notation. in any other case, just use the dot notation, which looks a lot cleaner and it's also easier to use.
+
+// console.log(jonas."first" + nameKey]); // SyntaxError: Unexpected string 
+
+
+const interestedIn = prompt("What do you whant to know about Jonas? Choose between firstName, lastName, age, job, and friends");
+
+
+if(jonas[interestedIn]) {  // not "undefined" (we are here ignoring that value could alse be empty string or 0)
+    console.log(jonas[interestedIn]);
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age, job, and friends.")
+}
+
+jonas.location = "Portugal";
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Michael"
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
+
+jonas.length
 

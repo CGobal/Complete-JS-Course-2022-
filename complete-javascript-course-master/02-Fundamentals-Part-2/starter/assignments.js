@@ -91,3 +91,15 @@ neighbours[neighbours.indexOf("Turkey")] = "Shat Vat Country";
 console.log(neighbours);
 
 */
+
+// LECTURE: Introduction to Objects
+
+const myCountry = {
+    country: "Armenia", 
+    capital : "Yerevan",
+    language : "Armenian",
+    population: 3,
+    neighbours : ["Georgia", "Turkey", "Iran"]
+};
+
+
