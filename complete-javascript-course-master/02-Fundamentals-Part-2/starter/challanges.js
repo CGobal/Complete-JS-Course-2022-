@@ -186,8 +186,9 @@ const calcTip = function(bill) {
 }
 
 for(let i = 0; i < bills.length; i++) {
-    tips.push(calcTip(bills[i]));
-    totals.push(calcTip(bills[i]) + bills[i]);
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
 }
 console.log(bills, tips, totals);
 
@@ -196,11 +197,13 @@ const calcAverage = function(arr) {
     for(let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
+    // console.log(sum);
     return sum / arr.length;
 }
 console.log(calcAverage(totals))
 
-// my experiments
+
+// MY experiments:
 
 // function to find the smallest value of the array elements
 const minElemArray = function(array) {
