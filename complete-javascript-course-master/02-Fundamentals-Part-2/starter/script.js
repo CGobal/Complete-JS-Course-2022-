@@ -474,3 +474,31 @@ for(let exercise = 1; exercise < 4; exercise++) {
 }
 
 */
+
+
+
+// The while Loop
+
+// for(let rep = 1; rep <= 10; rep++ ) {
+//     console.log(`Lifting weights repetition ${rep} ⛹️`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE:   Lifting weights repetition ${rep} ⛹️`);
+    rep++;
+}
+
+// While loop is more versatile than the for loop, which means that it can be used in a larger variety of situations. And that's because it does not really need a counter (it does really not have to depend on any counter variable...). But all the while loop really needs is the condition which needs to stay true for it to keep running.
+
+let dice = Math.trunc(Math.random() * 6) + 1;  // random number between 1 and 6
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if(dice === 6) console.log('Loop is about to end...');
+}
+
+//So whenever you do need a loop without a counter, you can reach for the while loop.    So basically that happens whenever you do not know beforehand how many iterations the loop will have.
+
+

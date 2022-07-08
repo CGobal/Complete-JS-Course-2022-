@@ -173,7 +173,6 @@ for(let i = 0; i < populations.length; i++) {
 
 console.log(percentages2);
 
-*/
 
 // LECTURE: Looping Backwards and Loops in Loops
 
@@ -186,3 +185,7 @@ for(let i = 0; i < listOfNeighbours.length; i++) {
         console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
     }
 }
+
+*/
+
+
