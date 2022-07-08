@@ -303,3 +303,47 @@ jonas.length
 */
 
 // Object Methods
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann", 
+    birthYear: 1991, 
+    job: "teacher",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriverLicense: false,
+
+    // calcAge: function(birthYear) {
+    //     return 2037 - birthYear;
+    // } // any function that is attached to an object is called a method
+
+    // calcAge: function() {
+    //     // console.log(this)
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old  ${this.job}, and he has ${this.hasDriverLicense ? "a" : "no"} driver license}`
+    }
+};
+
+// So if you can think of functions as simply being values then you can see that a method is actually also a property. It just happens to be a property that holds a function value.     So here we have a string value, here we have an array value,here we have a Boolean value, and here we have a function value.
+
+console.log(jonas.calcAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+//console.log(jonas["calcAge"](1991)); 
+
+// So the "this keyword" or the "this "variable is basically equal to the object on which the method is called, or in other words, it is equal to the object calling the method.
+
+// Challenge
+// "Jonas is a 46-year old teacher, and he has a(NO) driver license"
+
+console.log(jonas.getSummary()); 
