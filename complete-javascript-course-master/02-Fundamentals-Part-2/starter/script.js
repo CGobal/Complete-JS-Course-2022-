@@ -167,7 +167,7 @@ console.log(friends); // ['Michael', 'Steven', 'Jay']
 const jonas = ['Jonas', "Shmedtmann", 2037 - 1991, "teacher", friends, [10, 20, 30]];
 
 console.log(jonas);
-*/
+
 
 // Exercise
 const calcAge = function(birthYear) {
@@ -190,3 +190,41 @@ const sums = [addTwo(10, 30), addTwo(20, 8), addTwo(98, 80), addTwo(30, 43)];
 // So basically we can place function calls into an Array just fine, because they will produce a value.
 console.log(sums); // [40, 28, 178, 73]
 
+
+
+// Basic Array Operations (Methods)
+
+// Add elements
+const friends = ["Michael", "Steven", "Peter"];
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John");
+console.log(friends)
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop(); 
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf("Steven")); // 1
+console.log(friends.indexOf("Bob")); // -1 --> Not exist in the array
+
+
+// this👇 method uses strict equality:
+friends.push(23)
+console.log(friends.includes("Steven")); // true
+console.log(friends.includes("Bob")); // false
+console.log(friends.includes("23")); // false // it does not do type coercion
+console.log(friends.includes(23)); // true
+
+if (friends.includes("Steven")) {
+    console.log("You have a friend called Steven");
+}
+
+*/

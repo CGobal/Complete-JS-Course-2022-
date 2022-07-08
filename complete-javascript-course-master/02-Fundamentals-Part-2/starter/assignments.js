@@ -57,7 +57,6 @@ console.log(describePopulation("Armenia", 3));
 console.log(describePopulation("Georgia", 10.5));
 console.log(describePopulation("Russia", 140));
 
-*/
 
 // LECTURE: Introduction to Arrays
 
@@ -70,4 +69,4 @@ const percentages = [percentageOfWorld(populations[0]), percentageOfWorld(popula
 
 console.log(percentages);
 
-
+*/
