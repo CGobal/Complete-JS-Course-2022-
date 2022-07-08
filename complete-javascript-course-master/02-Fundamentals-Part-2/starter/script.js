@@ -256,7 +256,7 @@ const jonas = {
 // We should use arrays for more order data,  and objects for more unstructured data. And data that we actually want to name, and then retrieve from the object, based on that name.
 
 
-*/
+
 
 //  Dot vs. Bracket Notation
 
@@ -300,3 +300,6 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
 
 jonas.length
 
+*/
+
+// Object Methods

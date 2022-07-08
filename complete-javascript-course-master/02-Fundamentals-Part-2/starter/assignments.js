@@ -90,7 +90,7 @@ if(!neighbours.includes("Germany")) {
 neighbours[neighbours.indexOf("Turkey")] = "Shat Vat Country";
 console.log(neighbours);
 
-*/
+
 
 // LECTURE: Introduction to Objects
 
@@ -102,4 +102,25 @@ const myCountry = {
     neighbours : ["Georgia", "Turkey", "Iran"]
 };
 
+
+
+// LECTURE: Dot vs. Bracket Notation
+
+const myCountry = {
+    country: "Armenia", 
+    capital : "Yerevan",
+    language : "armenian",
+    population: 3,
+    neighbours : ["Georgia", "Turkey", "Iran"]
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`)
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry["population"] -= 2;
+console.log(myCountry["population"]);
+
+*/
 
