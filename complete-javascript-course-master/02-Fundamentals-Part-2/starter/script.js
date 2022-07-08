@@ -377,4 +377,59 @@ for(let rep = 1; rep <= 10; rep++ ) {
 // So, what the loop does, is to verify before each repetition, if all condition here ("rep <= 10") still holds true, and only if it does, it will keep running the loop. So it will execute the next iteration.
 
 
+
+
+//  Looping Arrays, Breaking and Continuing
+
+const jonasArray = [ 
+    "Jonas",
+    "Schmedtmann", 
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"],
+    true
+];
+
+const types = [];
+
+for(let i = 0; i < jonasArray.length; i++) {
+    // Reading from jonas array
+    console.log(jonasArray[i], typeof jonasArray[i]);
+
+    // Filling types array
+    // types[i] = typeof jonasArray[i];
+    types.push(typeof jonasArray[i]);
+}
+console.log(types);
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+    //or
+    //ages[i] = 2037 - years[i];
+}
+console.log(ages);
+
+// continue and break
+// So continue is to exit the current iteration of the loop and continue to the next one.  On the other hand, break is used to completely terminate the whole loop.
+console.log("---ONLY STRINGS ----");
+for(let i = 0; i < jonasArray.length; i++) {
+    if(typeof jonasArray[i] !== "string") continue;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+
+console.log("---BREAK WITH NUMBER ----");
+for(let i = 0; i < jonasArray.length; i++) {
+    if(typeof jonasArray[i] === "number") break;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
 */
+
+

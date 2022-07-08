@@ -57,7 +57,7 @@ console.log(describePopulation("Armenia", 3));
 console.log(describePopulation("Georgia", 10.5));
 console.log(describePopulation("Russia", 140));
 
-
+*/
 // LECTURE: Introduction to Arrays
 
 const percentageOfWorld =  population => ((population / 7900) * 100).toFixed(2);
@@ -70,7 +70,7 @@ const percentages = [percentageOfWorld(populations[0]), percentageOfWorld(popula
 console.log(percentages);
 
 
-
+/*
 // LECTURE: Basic Array Operations (Methods)
 
 const neighbours = ["Georgia", "Turkey", "Iran"];
@@ -147,10 +147,30 @@ myCountry2.describe();
 myCountry2.checkIsland();
 console.log(myCountry2.isIsland);
 
-*/
+
 
 // LECTURE: Iteration: The for Loop
 
 for(let voter = 1; voter <= 50; voter++) {
     console.log(`Voter number ${voter} is currently voting`)
 }
+
+
+
+
+// LECTURE: Looping Arrays, Breaking and Continuing
+
+const percentageOfWorld1 =  population => ((population / 7900) * 100).toFixed(2);
+const populations1 = [3, 11.5, 140, 240];
+
+const percentages2 = [];
+
+for(let i = 0; i < populations.length; i++) {
+    percentages2[i] = percentageOfWorld1(populations1[i]);
+    // const perc = percentageOfWorld1(populations[i]);
+    // percentages2.push(perc);
+}
+
+console.log(percentages2);
+
+*/
