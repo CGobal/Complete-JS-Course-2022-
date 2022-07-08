@@ -106,7 +106,7 @@ const myCountry = {
 
 // LECTURE: Dot vs. Bracket Notation
 
-const myCountry = {
+const myCountry1 = {
     country: "Armenia", 
     capital : "Yerevan",
     language : "armenian",
@@ -114,14 +114,39 @@ const myCountry = {
     neighbours : ["Georgia", "Turkey", "Iran"]
 };
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`)
+console.log(`${myCountry1.country} has ${myCountry1.population} million ${myCountry1.language}-speaking people, ${myCountry1.neighbours.length} neighbouring countries and a capital called ${myCountry1.capital}.`)
 
-myCountry.population += 2;
-console.log(myCountry.population);
+myCountry1.population += 2;
+console.log(myCountry1.population);
 
-myCountry["population"] -= 2;
-console.log(myCountry["population"]);
+myCountry1["population"] -= 2;
+console.log(myCountry1["population"]);
+
+
+
+// LECTURE: Object Methods
+
+const myCountry2 = {
+    country: "Armenia", 
+    capital : "Yerevan",
+    language : "armenian",
+    population: 3,
+    neighbours : ["Georgia", "Turkey", "Iran"],
+    describe: function() {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`)
+    },
+    checkIsland: function() {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+        // Even simpler version (see why this works...)
+        // this.isIsland = !Boolean(this.neighbours.length);
+    } 
+};
+
+
+
+myCountry2.describe();
+myCountry2.checkIsland();
+console.log(myCountry2.isIsland);
 
 */
-
 

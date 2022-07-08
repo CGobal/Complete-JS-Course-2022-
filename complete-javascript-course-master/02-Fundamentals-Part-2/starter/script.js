@@ -300,7 +300,7 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
 
 jonas.length
 
-*/
+
 
 // Object Methods
 
@@ -327,7 +327,7 @@ const jonas = {
     },
 
     getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()}-year old  ${this.job}, and he has ${this.hasDriverLicense ? "a" : "no"} driver license}`
+        return `${this.firstName} is a ${this.calcAge()}-year old  ${this.job}, and he has ${this.hasDriverLicense ? "a" : "no"} driver's license.`
     }
 };
 
@@ -347,3 +347,5 @@ console.log(jonas.age);
 // "Jonas is a 46-year old teacher, and he has a(NO) driver license"
 
 console.log(jonas.getSummary()); 
+
+*/
