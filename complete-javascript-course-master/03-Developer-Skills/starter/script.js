@@ -11,9 +11,12 @@
 // // BUG TODO
 // console.log('55555555');
 
+// Using Google, StackOverflow and MDN
+
 // PROBLEM 1:
 // We work for a company building a smart home thermometer. Our most rescent task is this: "Given an array of temperatures of one day, calculate the  temperature amplitude. Keep in mind that sometimes there might be a sensor error."
 
+/* 
 const temperature = [3, -2, -6, , -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 // 1) Understanding the problem
@@ -76,3 +79,37 @@ const calcTempAmplitudeNew = function (t1, t2) {
 
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 2], [9, 0, 5]);
 console.log(amplitudeNew);
+
+*/
+
+// Debugging with the Console and Breakpoints
+
+const measureKeelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+
+    // C) FIX
+    value: Number(prompt('Degrees celsius:')),
+  };
+
+  // B) FIND
+  console.table(measurement);
+  //console.dir(measurement);
+
+  //console.log(measurement.value);
+  //console.warn(measurement.value);
+  //console.error(measurement.value);
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+// A) IDENTIFY   (the BUG)
+console.log(measureKeelvin());
+
+const measurement = {
+  type: 'temp',
+  unit: 'celsius',
+
+  // C) FIX
+  value: Number(prompt('Degrees celsius:')),
+};
