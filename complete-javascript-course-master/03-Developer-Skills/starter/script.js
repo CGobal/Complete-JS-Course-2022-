@@ -80,7 +80,7 @@ const calcTempAmplitudeNew = function (t1, t2) {
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 2], [9, 0, 5]);
 console.log(amplitudeNew);
 
-*/
+
 
 // Debugging with the Console and Breakpoints
 
@@ -90,7 +90,8 @@ const measureKeelvin = function () {
     unit: 'celsius',
 
     // C) FIX
-    value: Number(prompt('Degrees celsius:')),
+    // value: Number(prompt('Degrees celsius:')),
+    value: 10,
   };
 
   // B) FIND
@@ -106,10 +107,33 @@ const measureKeelvin = function () {
 // A) IDENTIFY   (the BUG)
 console.log(measureKeelvin());
 
-const measurement = {
-  type: 'temp',
-  unit: 'celsius',
+// Using a debugger
 
-  // C) FIX
-  value: Number(prompt('Degrees celsius:')),
+const calcTempAmplitudeBug = function (t1, t2) {
+  const array1 = ['a', 'b', 'c'];
+  const array2 = ['d', 'e', 'f'];
+  const array3 = array1.concat(array2);
+
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = 0;
+  let min = 0;
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== 'number') continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(min, max);
+  return max - min;
 };
+
+console.log('**************');
+const amplitudeBug = calcTempAmplitudeBug([5, 5, 1], [9, 4, 5]);
+// A) IDENTIFY
+console.log(amplitudeBug);
+
+
+*/
